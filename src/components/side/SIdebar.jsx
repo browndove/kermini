@@ -1,5 +1,5 @@
 import React from 'react'
-import {MdLineStyle, MdTimeline, MdOutlineSubscriptions, MdOutlineIncompleteCircle, MdWorkOutline, MdAddCircleOutline} from 'react-icons/md' 
+import {MdLineStyle, MdTimeline, MdSettingsSuggest, MdNotifications, MdOutlineSubscriptions, MdOutlineIncompleteCircle, MdWorkOutline, MdAddCircleOutline} from 'react-icons/md' 
 import {BsPersonWorkspace} from 'react-icons/bs'
 import {TbReport, TbLogout} from 'react-icons/tb'
 import {AiTwotoneCalendar, AiOutlineEdit} from 'react-icons/ai'
@@ -29,7 +29,7 @@ const Sidebar = () => {
     </li>
 
     <li className='flex hover:bg-slate-400 hover:text-white cursor-pointer p-[5px] ml-3 items-center rounded-[15px]'>
-<MdOutlineSubscriptions className='mr-5 text-[20px]'/> Subscriptions
+<MdOutlineSubscriptions className='mr-5 text-[20px]'/> <Link to="/subscribe">Subscribe</Link>
     </li>
 </ul>
         </div>
@@ -38,7 +38,7 @@ const Sidebar = () => {
 <h3 className='font-light text-[13px] text-[#939191]'>Projects</h3>
 <ul className='p-[]'>
     <li className='flex hover:bg-slate-400 cursor-pointer hover:text-white items-center ml-3 p-[5px] rounded-[15px]'>
-<MdLineStyle className='mr-5 text-[20px]'/> Monthly Programs
+<MdLineStyle className='mr-5 text-[20px]'/> <Link to='/MonthlyPrograms'>Monthly Programs</Link>
     </li>
 
     <li className='flex hover:bg-slate-400 cursor-pointer hover:text-white items-center ml-3 p-[5px] rounded-[15px] '>
@@ -46,7 +46,7 @@ const Sidebar = () => {
     </li>
 
     <li className='flex hover:bg-slate-400 cursor-pointer hover:text-white items-center ml-3 p-[5px] rounded-[15px]'>
-<BsPersonWorkspace className='mr-5 text-[20px]'/> Assign Task
+<BsPersonWorkspace className='mr-5 text-[20px]'/> <Link to='/AssignTask'>Assign Task</Link>
     </li>
 
     <li className='flex hover:bg-slate-400 hover:text-white cursor-pointer p-[5px] ml-3 items-center rounded-[15px]'>
@@ -59,15 +59,15 @@ const Sidebar = () => {
 <h3 className='font-light text-[13px] text-[#939191]'>Quick user-menu</h3>
 <ul className='p-[]'>
     <li className='flex hover:bg-slate-400 cursor-pointer hover:text-white items-center ml-3 p-[5px] rounded-[15px]'>
-<TbReport className='mr-5 text-[20px]'/> Reports
+<TbReport className='mr-5 text-[20px]'/> <Link to="/report">Report</Link>
     </li>
 
     <li className='flex hover:bg-slate-400 cursor-pointer hover:text-white items-center ml-3 p-[5px] rounded-[15px] '>
-<AiOutlineEdit className='mr-5 text-[20px]'/> SignIn Time
+<MdSettingsSuggest className='mr-5 text-[20px]'/> Settings
     </li>
 
     <li className='flex hover:bg-slate-400 cursor-pointer  text-sm hover:text-white items-center ml-3 p-[5px] rounded-[15px]'>
-<BsPersonWorkspace className='mr-5 text-[20px]'/> Themes & Personalization
+<MdNotifications className='mr-5 text-[20px]'/> Notification
     </li>
 
     <li className='flex hover:bg-slate-400 hover:text-white cursor-pointer p-[5px] ml-3 items-center rounded-[15px]'>
